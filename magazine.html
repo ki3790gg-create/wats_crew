@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>왓츠 이야기 제1호</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap">
+<style>
+/* Magazine reader: one issue, its pages stacked at reading size. */
+:root { --bg: #ffffff; --fg: #111111; --muted: #8b8f7a; --deep: #607829; --paper: #f3f5ea; color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: "Gowun Dodum", -apple-system, "Noto Sans KR", sans-serif;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 56px; }
+img { max-width: 100%; }
+.top { display: flex; justify-content: space-between; align-items: center; max-width: 920px; margin: 0 auto; padding-block: 24px; }
+.top img { height: 32px; width: auto; display: block; }
+.top a.back { color: var(--fg); text-decoration: none; font-size: 14px; }
+.top a.back:hover, .top a.back:focus-visible { color: var(--deep); }
+.head { max-width: 920px; margin: 24px auto 32px; border-bottom: 1.5px solid var(--fg); padding-bottom: 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.head p { margin: 0; font-size: 13px; letter-spacing: .12em; color: var(--muted); }
+.head h1 { margin: 4px 0 0; font-weight: 400; font-size: clamp(26px, 4vw, 36px); text-wrap: balance; }
+.head span { font-size: 13px; color: var(--muted); }
+.pages { display: grid; gap: 32px; max-width: 920px; margin: 0 auto; padding: 0; list-style: none; }
+.pages figure { margin: 0; }
+.pages img { display: block; width: 100%; height: auto; background: var(--paper); box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 12px 32px -18px rgba(0,0,0,.35); }
+.pages figcaption { margin-top: 10px; text-align: right; font-size: 13px; color: var(--muted); }
+.foot { display: flex; justify-content: center; margin-top: 48px; }
+.foot a { color: var(--deep); text-decoration: none; border: 1.5px solid var(--deep); border-radius: 999px; padding: 10px 22px; font-size: 15px; }
+.foot a:hover, .foot a:focus-visible { background: var(--deep); color: #fff; outline: none; }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="back" href="index.html">← 메인으로</a>
+  <a href="index.html"><img src="images/logo.png" alt="왓츠 메인으로"></a>
+</header>
+<div class="head">
+  <div><p>MAGAZINE · 제1호</p><h1>왓츠 이야기</h1></div>
+  <span>2026년 8월 27일 · 2쪽</span>
+</div>
+<ol class="pages">
+  <li><figure><img src="images/mag1-p1.jpg" width="1400" height="1971" alt="왓츠 이야기 제1호 1쪽: 왓츠 탄생 스토리, 돌봄공동체 다봄에서 왓츠가 되기까지"><figcaption>1p</figcaption></figure></li>
+  <li><figure><img src="images/mag1-p2.jpg" width="1400" height="1971" alt="왓츠 이야기 제1호 2쪽: 크루 보이스 내가 생각하는 왓츠, 삼춘의 비밀 저금밭 만화, 참여 안내" loading="lazy"><figcaption>2p</figcaption></figure></li>
+</ol>
+<nav class="foot"><a href="index.html">메인으로 돌아가기</a></nav>
+<script src="cursor.js"></script>
+</body>
+</html>
