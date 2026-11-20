@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>왓츠 이야기 제2호</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap">
+<style>
+/* Magazine reader: one issue, its pages stacked at reading size. */
+:root { --bg: #ffffff; --fg: #111111; --muted: #8b8f7a; --deep: #607829; --paper: #f3f5ea; color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: "Gowun Dodum", -apple-system, "Noto Sans KR", sans-serif;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 56px; }
+img { max-width: 100%; }
+.top { display: flex; justify-content: space-between; align-items: center; max-width: 920px; margin: 0 auto; padding-block: 24px; }
+.top img { height: 32px; width: auto; display: block; }
+.top a.back { color: var(--fg); text-decoration: none; font-size: 14px; }
+.top a.back:hover, .top a.back:focus-visible { color: var(--deep); }
+.head { max-width: 920px; margin: 24px auto 32px; border-bottom: 1.5px solid var(--fg); padding-bottom: 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.head p { margin: 0; font-size: 13px; letter-spacing: .12em; color: var(--muted); }
+.head h1 { margin: 4px 0 0; font-weight: 400; font-size: clamp(26px, 4vw, 36px); text-wrap: balance; }
+.head span { font-size: 13px; color: var(--muted); }
+.pages { display: grid; gap: 32px; max-width: 920px; margin: 0 auto; padding: 0; list-style: none; }
+.pages figure { margin: 0; }
+.pages img { display: block; width: 100%; height: auto; background: var(--paper); box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 12px 32px -18px rgba(0,0,0,.35); }
+.pages figcaption { margin-top: 10px; text-align: right; font-size: 13px; color: var(--muted); }
+.foot { display: flex; justify-content: center; margin-top: 48px; }
+.foot a { color: var(--deep); text-decoration: none; border: 1.5px solid var(--deep); border-radius: 999px; padding: 10px 22px; font-size: 15px; }
+.foot a:hover, .foot a:focus-visible { background: var(--deep); color: #fff; outline: none; }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="back" href="index.html">← 메인으로</a>
+  <a href="index.html"><img src="images/logo.png" alt="왓츠 메인으로"></a>
+</header>
+<div class="head">
+  <div><p>MAGAZINE · 제2호</p><h1>왓츠 이야기</h1></div>
+  <span>2026년 10월 · 7쪽</span>
+</div>
+<ol class="pages">
+  <li><figure><img src="images/mag2-cover.jpg" width="1400" height="1981" alt="왓츠 이야기 제2호 표지: 두번째 이야기 Local Curation Zine, 위미 바다와 다리 그림, 목차"><figcaption>표지</figcaption></figure></li>
+  <li><figure><img src="images/mag2-p1.jpg" width="1400" height="1993" alt="왓츠 이야기 제2호 1쪽: 바라봄, 그리고 스며듦. 위미에서 찾은 여섯 가지 이야기 조각" loading="lazy"><figcaption>1p</figcaption></figure></li>
+  <li><figure><img src="images/mag2-p2.jpg" width="1400" height="1981" alt="왓츠 이야기 제2호 2쪽: 위미위미 어디서, 무엇을 했나? 프로젝트 활동 지도" loading="lazy"><figcaption>2p</figcaption></figure></li>
+  <li><figure><img src="images/mag2-p3.jpg" width="1400" height="1994" alt="왓츠 이야기 제2호 3쪽: 갈천공예 박지혜 작가 인터뷰, 내일을 향해 위미의 시간을 엮어내다" loading="lazy"><figcaption>3p</figcaption></figure></li>
+  <li><figure><img src="images/mag2-p4.jpg" width="1400" height="1982" alt="왓츠 이야기 제2호 4쪽: Weaving Wimi’s Time for Tomorrow, 박지혜 작가 인터뷰 영문" loading="lazy"><figcaption>4p</figcaption></figure></li>
+  <li><figure><img src="images/mag2-p5.jpg" width="1400" height="1994" alt="왓츠 이야기 제2호 5쪽: 이야기 조각 찾기부터 왓츠가 해온 일 전하기까지 여섯 단계" loading="lazy"><figcaption>5p</figcaption></figure></li>
+  <li><figure><img src="images/mag2-p6.jpg" width="1400" height="1982" alt="왓츠 이야기 제2호 6쪽: 렛츠 왓츠! 되미와 함께하는 이야기 조각 모으기 마인드맵, 아카이빙과 큐레이션" loading="lazy"><figcaption>6p</figcaption></figure></li>
+  <li><figure><img src="images/mag2-p7.jpg" width="1400" height="1993" alt="왓츠 이야기 제2호 7쪽: 삼춘시리즈 2탄 바다 한입, 위미솜이 만화와 참여 안내, 크레딧" loading="lazy"><figcaption>7p</figcaption></figure></li>
+  <li><figure><img src="images/mag2-back.jpg" width="1400" height="1981" alt="왓츠 이야기 제2호 뒤표지: 2026. Oct. Local Curation Zine 왓츠이야기 Vol 2." loading="lazy"><figcaption>뒤표지</figcaption></figure></li>
+</ol>
+<nav class="foot"><a href="index.html">메인으로 돌아가기</a></nav>
+<script src="cursor.js"></script>
+</body>
+</html>
